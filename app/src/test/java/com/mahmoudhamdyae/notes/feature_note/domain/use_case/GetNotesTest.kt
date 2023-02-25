@@ -38,7 +38,7 @@ class GetNotesTest {
     }
 
     @Test
-    fun `Order notes by title ascending, correct order`() = runBlocking {
+    fun orderNotesByTitleAscending_CorrectOrder() = runBlocking {
         val notes = getNotes(NoteOrder.Title(OrderType.Ascending)).first()
 
         for(i in 0..notes.size - 2) {
@@ -47,7 +47,7 @@ class GetNotesTest {
     }
 
     @Test
-    fun `Order notes by title descending, correct order`() = runBlocking {
+    fun orderNotesByTitleDescending_CorrectOrder() = runBlocking {
         val notes = getNotes(NoteOrder.Title(OrderType.Descending)).first()
 
         for(i in 0..notes.size - 2) {
@@ -56,7 +56,7 @@ class GetNotesTest {
     }
 
     @Test
-    fun `Order notes by date ascending, correct order`() = runBlocking {
+    fun orderNotesByDateAscending_CorrectOrder() = runBlocking {
         val notes = getNotes(NoteOrder.Date(OrderType.Ascending)).first()
 
         for(i in 0..notes.size - 2) {
@@ -65,7 +65,7 @@ class GetNotesTest {
     }
 
     @Test
-    fun `Order notes by date descending, correct order`() = runBlocking {
+    fun orderNotesByDateDescending_CorrectOrder() = runBlocking {
         val notes = getNotes(NoteOrder.Date(OrderType.Descending)).first()
 
         for(i in 0..notes.size - 2) {
@@ -74,7 +74,7 @@ class GetNotesTest {
     }
 
     @Test
-    fun `Order notes by color ascending, correct order`() = runBlocking {
+    fun orderNotesByColorAscending_CorrectOrder() = runBlocking {
         val notes = getNotes(NoteOrder.Color(OrderType.Ascending)).first()
 
         for(i in 0..notes.size - 2) {
@@ -83,7 +83,7 @@ class GetNotesTest {
     }
 
     @Test
-    fun `Order notes by color descending, correct order`() = runBlocking {
+    fun orderNotesByColorDescending_CorrectOrder() = runBlocking {
         val notes = getNotes(NoteOrder.Color(OrderType.Descending)).first()
 
         for(i in 0..notes.size - 2) {
