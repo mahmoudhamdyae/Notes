@@ -1,4 +1,4 @@
-package com.mahmoudhamdyae.notes.feature_note.presentation
+package com.mahmoudhamdyae.notes.ui
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.ui.test.*

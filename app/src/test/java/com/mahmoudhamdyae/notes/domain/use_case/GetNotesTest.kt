@@ -1,7 +1,7 @@
-package com.mahmoudhamdyae.notes.feature_note.domain.use_case
+package com.mahmoudhamdyae.notes.domain.use_case
 
 import com.google.common.truth.Truth.assertThat
-import com.mahmoudhamdyae.notes.feature_note.data.repository.FakeNoteRepository
+import com.mahmoudhamdyae.notes.data.repository.FakeNoteRepository
 import com.mahmoudhamdyae.notes.domain.model.Note
 import com.mahmoudhamdyae.notes.domain.use_case.GetNotes
 import com.mahmoudhamdyae.notes.domain.util.NoteOrder

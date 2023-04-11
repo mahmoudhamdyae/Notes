@@ -1,4 +1,4 @@
-package com.mahmoudhamdyae.notes.feature_note.data.repository
+package com.mahmoudhamdyae.notes.data.repository
 
 import com.mahmoudhamdyae.notes.domain.model.Note
 import com.mahmoudhamdyae.notes.domain.repository.NoteRepository
