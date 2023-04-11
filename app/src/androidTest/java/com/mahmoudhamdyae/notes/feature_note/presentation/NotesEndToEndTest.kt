@@ -10,10 +10,11 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.mahmoudhamdyae.notes.core.util.TestTags
 import com.mahmoudhamdyae.notes.di.AppModule
-import com.mahmoudhamdyae.notes.feature_note.presentation.add_edit_note.AddEditNoteScreen
-import com.mahmoudhamdyae.notes.feature_note.presentation.notes.NotesScreen
-import com.mahmoudhamdyae.notes.feature_note.presentation.util.Screen
-import com.mahmoudhamdyae.notes.ui.theme.CleanArchitectureNoteAppTheme
+import com.mahmoudhamdyae.notes.ui.add_edit_note.AddEditNoteScreen
+import com.mahmoudhamdyae.notes.ui.notes.NotesScreen
+import com.mahmoudhamdyae.notes.ui.util.Screen
+import com.mahmoudhamdyae.notes.ui.MainActivity
+import com.mahmoudhamdyae.notes.ui.theme.NotesAppTheme
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.UninstallModules
@@ -36,7 +37,7 @@ class NotesEndToEndTest {
     fun setUp() {
         hiltRule.inject()
         composeRule.setContent {
-            CleanArchitectureNoteAppTheme {
+            NotesAppTheme {
                 val navController = rememberNavController()
                 NavHost(
                     navController = navController,

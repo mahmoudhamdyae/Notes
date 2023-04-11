@@ -2,10 +2,10 @@ package com.mahmoudhamdyae.notes.di
 
 import android.app.Application
 import androidx.room.Room
-import com.mahmoudhamdyae.notes.feature_note.data.data_source.NoteDatabase
-import com.mahmoudhamdyae.notes.feature_note.data.repository.NoteRepositoryImpl
-import com.mahmoudhamdyae.notes.feature_note.domain.repository.NoteRepository
-import com.mahmoudhamdyae.notes.feature_note.domain.use_case.*
+import com.mahmoudhamdyae.notes.data.local.NoteDatabase
+import com.mahmoudhamdyae.notes.data.repository.NoteRepositoryImpl
+import com.mahmoudhamdyae.notes.domain.repository.NoteRepository
+import com.mahmoudhamdyae.notes.domain.use_case.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,27 +1,27 @@
-package com.mahmoudhamdyae.notes.feature_note.data.repository
+package com.mahmoudhamdyae.notes.data.repository
 
+import com.mahmoudhamdyae.notes.data.local.NoteDao
 import com.mahmoudhamdyae.notes.domain.model.Note
 import com.mahmoudhamdyae.notes.domain.repository.NoteRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
 
-class FakeNoteRepository : NoteRepository {
-
-    private val notes = mutableListOf<Note>()
+class NoteRepositoryImpl(
+    private val dao: NoteDao
+) : NoteRepository {
 
     override fun getNotes(): Flow<List<Note>> {
-        return flow { emit(notes) }
+        return dao.getNotes()
     }
 
     override suspend fun getNoteById(id: Int): Note? {
-        return notes.find { it.id == id }
+        return dao.getNoteById(id)
     }
 
     override suspend fun insertNote(note: Note) {
-        notes.add(note)
+        dao.insertNote(note)
     }
 
     override suspend fun deleteNote(note: Note) {
-        notes.remove(note)
+        dao.deleteNote(note)
     }
 }

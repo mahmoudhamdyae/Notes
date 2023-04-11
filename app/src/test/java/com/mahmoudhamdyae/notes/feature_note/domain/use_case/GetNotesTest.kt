@@ -2,9 +2,10 @@ package com.mahmoudhamdyae.notes.feature_note.domain.use_case
 
 import com.google.common.truth.Truth.assertThat
 import com.mahmoudhamdyae.notes.feature_note.data.repository.FakeNoteRepository
-import com.mahmoudhamdyae.notes.feature_note.domain.model.Note
-import com.mahmoudhamdyae.notes.feature_note.domain.util.NoteOrder
-import com.mahmoudhamdyae.notes.feature_note.domain.util.OrderType
+import com.mahmoudhamdyae.notes.domain.model.Note
+import com.mahmoudhamdyae.notes.domain.use_case.GetNotes
+import com.mahmoudhamdyae.notes.domain.util.NoteOrder
+import com.mahmoudhamdyae.notes.domain.util.OrderType
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
